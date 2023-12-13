@@ -1,0 +1,2 @@
+# seaf-cli
+ Seafile CLI
