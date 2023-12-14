@@ -1,0 +1,15 @@
+version: '2'
+services:
+  seaf-cli:
+    restart: always
+    image: overbyrn/seaf-cli
+    container_name: seaf-cli
+    environment:
+      - LIBRARY_ID=<your-library-id-here>
+      - SERVER_URL=<server-url>
+      - SERVER_PORT=<server-port>
+      - USERNAME=<username>
+      - PASSWORD=<password>
+      - DATA_DIR=<directory-path-to-sync>
+    volumes:
+      - <host-volume-path>:<directory-path-to-sync>
